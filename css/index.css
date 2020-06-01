@@ -167,13 +167,25 @@ body {
     font-size: 42px;
 }
 
-.conteneur4 {
-    position: relative;
-    top: 25vh;
-    width: 100vh;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
+@media screen and (min-width: 925px) {
+    .conteneur4 {
+        position: relative;
+        top: 25vh;
+        width: 100vh;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 924px) {
+    .conteneur4 {
+        position: relative;
+        top: 25vh;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .conteneur5 {
