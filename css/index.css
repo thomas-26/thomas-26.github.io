@@ -1,0 +1,383 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.conteneur {
+    height: 100vh;
+    background-image: url('../images/perroquet.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.conteneur2 {
+    margin: auto;
+    height: 35vh;
+    width: 50%;
+    position: relative;
+    top: 35vh;
+    text-align: center;
+    /*border: 2px solid white;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+.nom {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.etude {
+    margin-bottom: 40px;
+    /* Create the gradient. */
+    background-image: linear-gradient(45deg, #00afa6, #0042ad);
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.accroche {
+    color: white;
+    font-size: 22px;
+}
+
+.conteneur2 .btn {
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 0 !important;
+    color: white !important;
+    background-color: #00639c !important;
+    animation: fadein 10s;
+    -moz-animation: fadein 7s; /* Firefox */
+    -webkit-animation: fadein 7s; /* Safari et Chrome */
+    -o-animation: fadein 7s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.mouse {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    width: 37.5px;
+    height: 60px;
+    border: 2px solid white;
+    background: linear-gradient(#00afa6, #0042ad);
+    border-radius: 60px;
+}
+
+.mouse::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 5px;
+    background: white;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    opacity: 1;
+    animation: mouse 2s infinite;
+}
+
+@keyframes mouse {
+    from{
+        opacity: 1;
+        top: 15px;
+    }
+    to {
+        opacity: 0;
+        top: 40px;
+    }
+}
+
+.navbar {
+    position: relative !important;
+}
+
+#mainNav {
+    background-color: #00639c !important;
+}
+
+.nav-item a{
+    font-size: 16px;
+    color: rgb(240, 240, 240) !important;
+}
+
+.conteneur3 {
+    height: 94vh;
+    background-color: rgb(240, 240, 240);
+}
+
+.titre {
+    width: 50vh;
+    position: relative;
+    top: 12.5vh;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    /*border: 3px solid red;*/
+}
+
+.apropos {
+    text-align: center;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.conteneur4 {
+    position: relative;
+    top: 25vh;
+    width: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteneur5 {
+ /*   border: 3px solid green;*/
+    width: 55%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.presentation {
+    font-family: Arial, serif;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.conteneur6 {
+    width: 40%;
+    background-image: url('../images/pc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texte {
+    margin-bottom: 35px;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    color: white;
+    background-color: rgb(36, 36, 36);
+}
+
+.bloque .btn {
+    border-radius: 0 !important;
+    color: white !important;
+    background-color: #00639c !important;
+}
+
+.conteneur7 {
+    height: 100vh;
+    background-color: rgb(36, 36, 36);
+}
+
+.conteneur8 {
+    margin: auto;
+    padding-top: 12.5vh;
+    height: 100vh;
+    width: 100vh;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.conteneur8 h2, .conteneur8 h5 {
+    margin-bottom: 20px;
+}
+
+.conteneur7 .conteneur8 h5 {
+   color: #00639c;
+}
+
+.conteneur8 h6 {
+    margin-bottom: 40px;
+}
+
+input[type=text], select, textarea {
+    width: 40%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+  
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input {
+    width: 100% !important;
+}
+
+.text {
+    color: #00639c;
+}
+
+.col-lg-2 .btn {
+    margin-top: 5px;
+    border-radius: 0 !important;
+    color: white !important;
+    background-color: #00639c !important;
+}
+
+.sticky {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+  }
+
+.conteneur9 {
+    height: 100vh;
+    background-color: rgb(36, 36, 36);
+    color: rgb(240, 240, 240);
+}
+
+.conteneur10 {
+    height: 100vh;
+    background-color: rgb(240, 240, 240);
+}
+
+.conteneur9 .conteneur8 h5 {
+    font-size: 24px;
+    margin-top: 65px;
+    margin-bottom: 25px;
+}
+
+.conteneur9 .conteneur8 h5 span {
+    border-top: 2px solid rgb(240, 240, 240);
+    padding-top: 5px;
+}
+
+.conteneur11 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel {
+    border: 3px solid #00639c;
+    width: 70vh;
+}
+
+.carousel-item img{
+    height: 50vh;
+    width: 100%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300639c' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300639c' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-indicators li {
+    background-color: #00639c !important;
+}
+
+.carousel-caption {
+    color: #00639c !important;
+}
+
+table {
+    width: 20vh !important;
+    margin-top: 15px;
+}
+
+.conteneur10 .conteneur8 h2{
+    color: black;
+}
+
+
+.conteneur17 {
+    height: 100vh;
+    background-color: rgb(36, 36, 36);
+}
+@media screen and (min-width: 925px) {
+    .conteneur18 {
+        margin: auto;
+        padding-top: 12.5vh;
+    /* height: 100vh;*/
+        width: 100vh;
+        color: white;
+        font-family: 'Arial', sans-serif;
+    }
+}
+
+@media screen and (max-width: 924px) {
+    .conteneur18 {
+        margin: auto;
+        padding-top: 12.5vh;
+    /* height: 100vh;
+        width: 100vh;*/
+        color: white;
+        font-family: 'Arial', sans-serif;
+    }
+}
+
+.conteneur18 h2, .conteneur18 h5 {
+    margin-bottom: 20px;
+}
+
+.conteneur17 .conteneur18 h5 {
+   color: #00639c;
+}
+
+.conteneur18 h6 {
+    margin-bottom: 40px;
+}
