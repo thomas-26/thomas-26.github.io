@@ -1,4 +1,4 @@
-<htlm>
+<html>
     </head>
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -7,15 +7,15 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     </head>
-    <body>
+    <body onload="typeWriter()">
         <div id="accueil" class="conteneur">
             
             <div class="conteneur2">
                 <h1 class="nom"> THOMAS VERCASSON </h1>
-                <h1 class="etude"> ETUDIANT EN INFORMATIQUE</h1>
+                <h1 id="etude"> </h1>
                 <h2 class="accroche"> BIENVENUE SUR MON PORTFOLIO </h2>
-                <button type="button" class="btn">DECOUVRIR</button>
-                <button type="button" class="btn">CONTACT</button>
+                <button type="button" class="btn"><a id="ancre" href="#apropos">DECOUVRIR</a></button>
+                <button type="button" class="btn"><a id="ancre" href="#contact">CONTACT</a></button>
             </div>
             
             <div class="mouse">
@@ -73,7 +73,7 @@
                             dispensées en IUT, j'ai choisi de me réorienter en BTS SIO 
                             option développement. 
                         </p>
-                        <button type="button" class="btn"> CURRICULUM </button>
+                        <button type="button" class="btn"> <a href="cv_vercasson.docx" target="_blank">CURRICULUM</a> </button>
                     </div>
                 </div>
                 <div class="conteneur6">
@@ -166,14 +166,34 @@
         <div class="conteneur10">
           <div class="conteneur8">
             <h2 class="apropos"> VEILLES </h2>
+            
+            <div class="conteneur19">
+              <div class="techno">
+                <p>Technologique</p>
+                <a href="VeilleAgri/trans-fixed-nav.html">
+                  <img class="agri" src="VeilleAgri/agri.jpg">
+                </a>
+              </div>
+              
+              <div class="juridique">
+                <p>Juridique</p>
+                <img class="agri" src="images/juridique.jpg">
+              </div>
+            </div>
           </div>
+
+          <div class="conteneur20">
+            <h2><u>Qu'est ce qu'une veille</u> ?</h2>
+            <p>la veille est une « activité continue en grande partie itérative visant à une surveillance active de l’environnement technologique, commercial, etc., pour en anticiper les évolutions »</p>
+          </div>
+
         </div>
 
-        <div class="row">
+        <div class="row" id="contact">
 
           <!--Grid column-->
           <div class="col-md-12 mb-md-0 mb-5">
-            <div id="contact" class="conteneur17">
+            <div class="conteneur17">
               <div class="conteneur18">
                   <h2> Contact </h2>
                   <h5> Envoyez moi un message </h5>
@@ -259,67 +279,21 @@
             @ Thomas Vercasson
         </footer>
     </body>
-</htlm>
+</html>
 
 <script>
-    // Wrap every letter in a span
-var textWrapper = document.querySelector('.nom');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.nom .letter',
-    opacity: [0,1],
-    easing: "easeInOutQuad",
-    duration: 2250,
-    delay: (el, i) => 25 * (i+1)
-  }).add({
-    targets: '.nom',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 100000
-  });
-
-    // Wrap every letter in a span
-var textWrapper = document.querySelector('.etude');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.etude .letter',
-    opacity: [0,1],
-    easing: "easeInOutQuad",
-    duration: 500,
-    delay: (el, i) => 100 * (i+1)
-  }).add({
-    targets: '.etude',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 100000
-  });
-
-  // Wrap every letter in a span
-var textWrapper2 = document.querySelector('.accroche');
-textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter2'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.accroche .letter2',
-    opacity: [0,1],
-    easing: "easeInOutQuad",
-    duration: 8000,
-    delay: (el, i) => 25 * (i+1)
-  }).add({
-    targets: '.accroche',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 100000
-  });
-
-</script>
+  var i = 0;
+  var txt = 'ETUDIANT EN INFORMATIQUE';
+  var speed = 60;
+  
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("etude").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+  </script>
 
 <script>
     window.onscroll = function() {myFunction()};

@@ -1,0 +1,31 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+h1 {
+    font-size: 55px;
+    line-height: 55px;
+    font-family: GraphikCondensed;
+    font-weight: 700;
+}
+
+p {
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+}
+
+#img2 {
+    height: 50%;
+    width: 75%;
+}
