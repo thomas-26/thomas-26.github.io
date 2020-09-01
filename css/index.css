@@ -17,7 +17,7 @@ body {
 .conteneur2 {
     margin: auto;
     height: 35vh;
-    width: 50%;
+    width: 51%;
     position: relative;
     top: 35vh;
     text-align: center;
@@ -32,7 +32,7 @@ body {
     font-weight: bold;
 }
 
-.etude {
+#etude {
     margin-bottom: 40px;
     /* Create the gradient. */
     background-image: linear-gradient(45deg, #00afa6, #0042ad);
@@ -167,6 +167,53 @@ body {
     font-size: 42px;
     width: 50vh;
     margin: auto;
+}
+
+.conteneur19 {
+    height: 45vh;
+}
+
+.techno {
+    border: 1px solid black;
+    width: 45%;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 10%;
+    float: left;
+    padding: 10px;
+}
+
+.juridique {
+    border: 1px solid black;
+    width: 45%;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 10%;
+    float: right;
+    padding: 10px;
+}
+
+.conteneur20 {
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 5%;
+    padding: 10px;   
+}
+
+.conteneur20 p {
+    padding: 35px;
+    font-weight: 500;
+}
+
+.agri {
+    width: 100%;
 }
 
 @media screen and (min-width: 1099px) {
@@ -372,6 +419,13 @@ table {
     height: 100vh;
     background-color: rgb(36, 36, 36);
 }
+
+#ancre
+{
+	color:white;
+	text-decoration:none;
+} 
+
 @media screen and (min-width: 1099px) {
     .conteneur18 {
         margin: auto;
