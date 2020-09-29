@@ -274,7 +274,12 @@ footer {
     background-color: #00639c !important;
 }
 
-.curriculum a:link { 
+.curriculum a { 
+    text-decoration:none; 
+    color: white;
+} 
+
+.curriculum a:hover { 
     text-decoration:none; 
     color: white;
 } 
