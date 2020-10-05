@@ -14,57 +14,189 @@ body {
     background-repeat: no-repeat;
 }
 
-.conteneur2 {
-    margin: auto;
-    height: 35vh;
-    width: 51%;
-    position: relative;
-    top: 35vh;
-    text-align: center;
-    /*border: 2px solid white;*/
-    font-family: 'Roboto', sans-serif;
+@media screen and (min-width: 1099px) {
+    
+    .conteneur2 {
+        margin: auto;
+        height: 35vh;
+        width: 51%;
+        position: relative;
+        top: 35vh;
+        text-align: center;
+        /*border: 2px solid white;*/
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .nom {
+        color: white;
+        font-size: 40px;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+    
+    #etude {
+        margin-bottom: 40px;
+        /* Create the gradient. */
+        background-image: linear-gradient(45deg, #00afa6, #0042ad);
+        /* Set the background size and repeat properties. */
+        background-size: 100%;
+        background-repeat: repeat;
+        /* Use the text as a mask for the background. */
+        /* This will show the gradient as a text color rather than element bg. */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    .accroche {
+        color: white;
+        font-size: 22px;
+    }
+    
+    .conteneur2 .btn {
+        margin-left: 10px;
+        margin-top: 20px;
+        border-radius: 0 !important;
+        color: white !important;
+        background-color: #00639c !important;
+        animation: fadein 10s;
+        -moz-animation: fadein 7s; /* Firefox */
+        -webkit-animation: fadein 7s; /* Safari et Chrome */
+        -o-animation: fadein 7s; /* Opera */
+    }
+
+    .mouse {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        width: 37.5px;
+        height: 60px;
+        border: 2px solid white;
+        background: linear-gradient(#00afa6, #0042ad);
+        border-radius: 60px;
+    }
+    
+    .mouse::before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 5px;
+        background: white;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        opacity: 1;
+        animation: mouse 2s infinite;
+    }
+
+    @keyframes mouse {
+        from{
+            opacity: 1;
+            top: 15px;
+        }
+        to {
+            opacity: 0;
+            top: 40px;
+        }
+    }
 }
 
-.nom {
-    color: white;
-    font-size: 40px;
-    margin-bottom: 30px;
-    font-weight: bold;
+@media screen and (max-width: 1100px) {
+    
+    .conteneur2 {
+        margin: auto;
+        height: 35vh;
+        width: 80%;
+        position: relative;
+        top: 40vh;
+        text-align: center;
+        /*border: 2px solid white;*/
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .nom {
+        color: white;
+        font-size: 70px;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+    
+    #etude {
+        margin-bottom: 40px;
+        /* Create the gradient. */
+        background-image: linear-gradient(45deg, #00afa6, #0042ad);
+        /* Set the background size and repeat properties. */
+        background-size: 100%;
+        background-repeat: repeat;
+        /* Use the text as a mask for the background. */
+        /* This will show the gradient as a text color rather than element bg. */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        font-size: 42.5px;
+        font-weight: bold;
+    }
+    
+    .accroche {
+        color: white;
+        font-size: 30px;
+    }
+    
+    .conteneur2 .btn {
+        font-size: 25px;
+        margin-left: 10px;
+        margin-top: 20px;
+        border-radius: 0 !important;
+        color: white !important;
+        background-color: #00639c !important;
+        animation: fadein 10s;
+        -moz-animation: fadein 7s; /* Firefox */
+        -webkit-animation: fadein 7s; /* Safari et Chrome */
+        -o-animation: fadein 7s; /* Opera */
+    }
+
+    .mouse {
+        position: absolute;
+        top: 87.5%;
+        left: 50%;
+        width: 60px;
+        height: 100px;
+        border: 2px solid white;
+        background: linear-gradient(#00afa6, #0042ad);
+        border-radius: 60px;
+    }
+    
+    .mouse::before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 5px;
+        background: white;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        opacity: 1;
+        animation: mouse 2s infinite;
+    }
+
+    @keyframes mouse {
+        from{
+            opacity: 1;
+            top: 15px;
+        }
+        to {
+            opacity: 0;
+            top: 75px;
+        }
+    }
 }
 
-#etude {
-    margin-bottom: 40px;
-    /* Create the gradient. */
-    background-image: linear-gradient(45deg, #00afa6, #0042ad);
-    /* Set the background size and repeat properties. */
-    background-size: 100%;
-    background-repeat: repeat;
-    /* Use the text as a mask for the background. */
-    /* This will show the gradient as a text color rather than element bg. */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.accroche {
-    color: white;
-    font-size: 22px;
-}
-
-.conteneur2 .btn {
-    margin-left: 10px;
-    margin-top: 20px;
-    border-radius: 0 !important;
-    color: white !important;
-    background-color: #00639c !important;
-    animation: fadein 10s;
-    -moz-animation: fadein 7s; /* Firefox */
-    -webkit-animation: fadein 7s; /* Safari et Chrome */
-    -o-animation: fadein 7s; /* Opera */
-}
 @keyframes fadein {
     from {
         opacity:0;
@@ -98,42 +230,6 @@ body {
     }
 }
 
-.mouse {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    width: 37.5px;
-    height: 60px;
-    border: 2px solid white;
-    background: linear-gradient(#00afa6, #0042ad);
-    border-radius: 60px;
-}
-
-.mouse::before{
-    content: "";
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    top: 5px;
-    background: white;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 50%;
-    opacity: 1;
-    animation: mouse 2s infinite;
-}
-
-@keyframes mouse {
-    from{
-        opacity: 1;
-        top: 15px;
-    }
-    to {
-        opacity: 0;
-        top: 40px;
-    }
-}
-
 .navbar {
     position: relative !important;
 }
@@ -145,6 +241,31 @@ body {
 .nav-item a{
     font-size: 16px;
     color: rgb(240, 240, 240) !important;
+}
+
+
+@media screen and (min-width: 1099px) { 
+
+    .apropos {
+        text-align: center;
+        font-weight: bold;
+        font-size: 42px;
+        width: 50vh;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 1100px) { 
+
+    .apropos {
+        text-align: center;
+        font-weight: bold;
+        font-size: 70px;
+        width: 50vh;
+        margin: auto;
+    }
+   
 }
 
 .conteneur3 {
@@ -159,14 +280,6 @@ body {
     margin: auto;
     font-family: 'Roboto', sans-serif;
     /*border: 3px solid red;*/
-}
-
-.apropos {
-    text-align: center;
-    font-weight: bold;
-    font-size: 42px;
-    width: 50vh;
-    margin: auto;
 }
 
 .conteneur19 {
@@ -225,6 +338,35 @@ body {
         display: flex;
         justify-content: space-between;
     }
+
+    .presentation {
+        font-family: Arial, serif;
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .texte {
+        margin-bottom: 35px;
+    }
+
+    .conteneur6 {
+        width: 40%;
+        background-image: url('../images/pc.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .conteneur5 {
+           width: 55%;
+           font-family: 'Roboto', sans-serif;
+       }
+
+    .bloque .btn {
+        border-radius: 0 !important;
+        color: white !important;
+        background-color: #00639c !important;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -233,32 +375,39 @@ body {
         top: 25vh;
         margin: auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
-}
 
-.conteneur5 {
- /*   border: 3px solid green;*/
-    width: 55%;
-    font-family: 'Roboto', sans-serif;
-}
+    .presentation {
+        font-family: Arial, serif;
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
 
-.presentation {
-    font-family: Arial, serif;
-    font-size: 26px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
+    .texte {
+        margin-bottom: 35px;
+        font-size: 25px;
+    }
 
-.conteneur6 {
-    width: 40%;
-    background-image: url('../images/pc.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+    .conteneur6 {
+        width: 35%;
+        background-image: url('../images/pc.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-.texte {
-    margin-bottom: 35px;
+    .conteneur5 {
+           width: 35%;
+           font-family: 'Roboto', sans-serif;
+       }
+
+       .bloque .btn {
+        border-radius: 0 !important;
+        color: white !important;
+        background-color: #00639c !important;
+        font-size: 24px;
+    }
 }
 
 footer {
@@ -266,12 +415,6 @@ footer {
     text-align: center;
     color: white;
     background-color: rgb(36, 36, 36);
-}
-
-.bloque .btn {
-    border-radius: 0 !important;
-    color: white !important;
-    background-color: #00639c !important;
 }
 
 .curriculum a { 
@@ -470,11 +613,21 @@ table {
     margin-bottom: 40px;
 }
 
-.conteneur21 {
-    position: relative;
-    top: 10vh;
-    width: 100vh;
-    margin: auto;
+@media screen and (min-width: 1099px) {
+    .conteneur21 {
+        position: relative;
+        top: 10vh;
+        width: 100vh;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .conteneur21 {
+        position: relative;
+        top: 10vh;
+        margin: auto;
+    }
 }
 
 .conteneur21 p {
@@ -487,11 +640,21 @@ table {
     margin-left:0;
 }
 
-.conteneur22 {
-    position: relative;
-    top: 15vh;
-    width: 100vh;
-    margin: auto;
+@media screen and (min-width: 1099px) {
+    .conteneur22 {
+        position: relative;
+        top: 15vh;
+        width: 100vh;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .conteneur22 {
+        position: relative;
+        top: 15vh;
+        margin: auto;
+    }
 }
 
 .conteneur22 p {
@@ -504,11 +667,22 @@ table {
     margin-bottom: 25px;
 }
 
-.conteneur23 {
-    position: relative;
-    top: 25vh;
-    width: 100vh;
-    margin: auto;
+
+@media screen and (min-width: 1099px) {
+    .conteneur23 {
+        position: relative;
+        top: 25vh;
+        width: 100vh;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .conteneur23 {
+        position: relative;
+        top: 25vh;
+        margin: auto;
+    }
 }
 
 .conteneur23 p {
