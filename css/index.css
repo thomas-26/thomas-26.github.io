@@ -440,6 +440,33 @@ footer {
         color: white;
         font-family: 'Arial', sans-serif;
     }
+
+    .conteneur9 .conteneur8 h5 {
+        font-size: 24px;
+        margin-top: 65px;
+        margin-bottom: 25px;
+    }
+
+    .conteneur11 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .carousel {
+        border: 3px solid #00639c;
+        height: 47.5vh;
+        width: 70vh;
+    }
+    
+    .carousel-item img{
+        height: 47.5vh;
+        width: 100%;
+    }
+
+    table {
+        width: 20vh !important;
+    }
+
 }
 
 @media screen and (max-width: 1100px) {
@@ -449,6 +476,43 @@ footer {
         color: white;
         font-family: 'Arial', sans-serif;
     }
+
+    .conteneur8 p {
+        width: 75%;
+        margin: auto;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .conteneur9 .conteneur8 h5 {
+        width: 75%;
+        margin: auto;
+        font-size: 35px;
+        margin-top: 65px;
+        margin-bottom: 25px;
+    }
+
+    .conteneur11 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .carousel {
+        border: 3px solid #00639c;
+        height: 20vh;
+        width: 25vh;
+    }
+    
+    .carousel-item img{
+        height: 20vh;
+        width: 100%;
+    }
+
+}
+
+.conteneur9 .conteneur8 h5 span {
+    border-top: 2px solid rgb(240, 240, 240);
+    padding-top: 5px;
 }
 
 .conteneur8 h2, .conteneur8 h5 {
@@ -505,42 +569,25 @@ input {
     width: 100% !important;
   }
 
+@media screen and (min-width: 1099px) {
+    .conteneur9 {
+        height: 350vh;
+        background-color: rgb(36, 36, 36);
+        color: rgb(240, 240, 240);
+    }
+}
+
+@media screen and (max-width: 1100px) {
 .conteneur9 {
-    height: 350vh;
+    height: 180vh;
     background-color: rgb(36, 36, 36);
     color: rgb(240, 240, 240);
+}
 }
 
 .conteneur10 {
     height: 100vh;
     background-color: rgb(240, 240, 240);
-}
-
-.conteneur9 .conteneur8 h5 {
-    font-size: 24px;
-    margin-top: 65px;
-    margin-bottom: 25px;
-}
-
-.conteneur9 .conteneur8 h5 span {
-    border-top: 2px solid rgb(240, 240, 240);
-    padding-top: 5px;
-}
-
-.conteneur11 {
-    display: flex;
-    justify-content: space-between;
-}
-
-.carousel {
-    border: 3px solid #00639c;
-    height: 47.5vh;
-    width: 70vh;
-}
-
-.carousel-item img{
-    height: 47.5vh;
-    width: 100%;
 }
 
 .carousel-control-prev-icon {
@@ -557,10 +604,6 @@ input {
 
 .carousel-caption {
     color: #00639c !important;
-}
-
-table {
-    width: 20vh !important;
 }
 
 .conteneur10 .conteneur8 h2{
@@ -625,7 +668,8 @@ table {
 @media screen and (max-width: 1100px) {
     .conteneur21 {
         position: relative;
-        top: 10vh;
+        top: 5vh;
+        width: 75%;
         margin: auto;
     }
 }
@@ -652,8 +696,9 @@ table {
 @media screen and (max-width: 1100px) {
     .conteneur22 {
         position: relative;
-        top: 15vh;
+        top: 10vh;
         margin: auto;
+        width: 75%;
     }
 }
 
@@ -679,8 +724,9 @@ table {
 
 @media screen and (max-width: 1100px) {
     .conteneur23 {
+        width: 75%;
         position: relative;
-        top: 25vh;
+        top: 15vh;
         margin: auto;
     }
 }
