@@ -656,7 +656,7 @@ input {
     }
 }
 
-@media screen and (max-width: 1100) {
+@media screen and (max-width: 1100px) {
     .conteneur17 {
         height: 60vh;
         background-color: rgb(36, 36, 36);
