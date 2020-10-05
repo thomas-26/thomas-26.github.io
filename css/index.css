@@ -282,32 +282,72 @@ body {
     /*border: 3px solid red;*/
 }
 
-.conteneur19 {
-    height: 45vh;
+@media screen and (min-width: 1099px) {
+
+    .conteneur19 {
+        height: 45vh;
+        border: 2px solid red;
+    }
+
+    .techno {
+        border: 1px solid black;
+        width: 45%;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 10%;
+        float: left;
+        padding: 10px;
+    }
+    
+    .juridique {
+        border: 1px solid black;
+        width: 45%;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 10%;
+        float: right;
+        padding: 10px;
+    }
+    
 }
 
-.techno {
-    border: 1px solid black;
-    width: 45%;
-    text-align: center;
-    color: black;
-    font-weight: bold;
-    font-size: 24px;
-    margin-top: 10%;
-    float: left;
-    padding: 10px;
-}
+@media screen and (max-width: 1100px) {
 
-.juridique {
-    border: 1px solid black;
-    width: 45%;
-    text-align: center;
-    color: black;
-    font-weight: bold;
-    font-size: 24px;
-    margin-top: 10%;
-    float: right;
-    padding: 10px;
+    
+    .conteneur19 {
+        height: 57.5vh;
+        width: 75%;
+        margin: auto;
+    }
+ 
+    .techno {
+        border: 1px solid black;
+       
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 10%;
+        float: left;
+        padding: 10px;
+    }
+    
+    .juridique {
+        border: 1px solid black;
+      
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 10%;
+        float: right;
+        padding: 10px;
+    }
+
 }
 
 .conteneur20 {
