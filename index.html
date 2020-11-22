@@ -1,15 +1,19 @@
 <html>
-    </head>
+    <!-- Import des feuilles de styles et bibliothèques -->
+    <head>
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
+     <!-- Appel de la fonction typeWriter dès que la page est chargée -->
     <body onload="typeWriter()">
         <div id="accueil" class="conteneur">
             
+            <!--  Page d'accueil -->
             <div class="conteneur2">
                 <h1 class="nom"> THOMAS VERCASSON </h1>
                 <h1 id="etude"> </h1>
@@ -18,6 +22,7 @@
                 <button type="button" class="btn"><a id="ancre" href="#contact">CONTACT</a></button>
             </div>
             
+            <!-- Animation de la souris -->
             <div class="mouse">
             </div>
 
@@ -49,6 +54,7 @@
             </div>
         </nav>
 
+        <!-- Bloc de présentation -->
         <div id="apropos" class="conteneur3">
             <div class="titre">
                 <h2 class="apropos"> PRESENTATION </h2>
@@ -81,12 +87,15 @@
                 </div>
             </div>
         </div>
+
+        <!-- Bloc qui rassemble les projets scolaires -->
         <div class="conteneur9">
             <div class="conteneur8">
                 <h2 class="apropos"> PROJETS </h2>
                 <h5> <span> Scolaires </span> </h5>
                 <p> Voici une sélection de projets scolaires que j'ai eu l'occasion de réaliser </p>
                 <h5> Site Web Commercial</h5>
+                <!-- Carroussel de présentation du projet de site commercial -->
                 <div class="conteneur11">
                   <div id="carroussel_nikon" class="carousel slide" data-ride="carousel">
                       <ul class="carousel-indicators">
@@ -113,6 +122,7 @@
                       </a>
                     </div>  
                     <div class="test"> 
+                      <!-- tableau de présentation des données clés du projet -->
                       <table class="table table-dark">
                         <tbody>
                           <tr>
@@ -123,9 +133,14 @@
                             <th scope="row">Année</th>
                             <td>2020</td>
                           </tr>
+                          <tr>
+                            <th scope="row">Durée</th>
+                            <td>6 mois</td>
+                          </tr>
                         </tbody>
                       </table>
 
+                      <!-- tableau de présentation des langages utilisés pour le projet -->
                       <table class="table table-dark">
                         <thead>
                           <tr>
@@ -163,6 +178,8 @@
                     </div>
                   </div>
             </div>
+
+            <!-- Présentation du projet -->
             <div class="conteneur21">
               <h4>Contexte</h4>
               <p>
@@ -193,6 +210,7 @@
               </p>
             <hr>
             </div>
+            <!-- Présnetation du projet Appli Frais -->
             <div class="conteneur22">
               <h5> Gestion fiche de frais</h5>
               <div class="conteneur11">
@@ -202,6 +220,7 @@
                       <li data-target="#carroussel_gsb" data-slide-to="1"></li>
                       <li data-target="#carroussel_gsb" data-slide-to="2"></li>
                     </ul>
+                    <!-- Caroussel de présentation des images du projet Appli frais-->
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="images/gsb/login.JPG" alt="Los Angeles" width="1100" height="500">
@@ -220,7 +239,8 @@
                       <span class="carousel-control-next-icon"></span>
                     </a>
                   </div>  
-                  <div class="test"> 
+                  <div class="test">
+                    <!-- tableau de présentation des données clés du projet --> 
                     <table class="table table-dark">
                       <tbody>
                         <tr>
@@ -231,9 +251,14 @@
                           <th scope="row">Année</th>
                           <td>2020</td>
                         </tr>
+                        <tr>
+                          <th scope="row">Durée</th>
+                          <td>2 mois</td>
+                        </tr>
                       </tbody>
                     </table>
 
+                    <!-- tableau de présentation des langages utilisés pour le projet -->
                     <table class="table table-dark">
                       <thead>
                         <tr>
@@ -263,6 +288,7 @@
                   </div>
                 </div>
             </div>
+            <!-- Présentation du contexte du projet -->
             <div class="conteneur23">
               <h4>Contexte</h4>
               <p>
@@ -289,11 +315,13 @@
                 Finalité
               </h4>
               <p>
-                Ce projet toujours en cours me permet de me familiariser avec l'architecture MVC ainsi que se confronter à la difficulté
-                de partir d'un code d'une autre personne et l'importance de suivre le modèle de ce dernier.
+                Ce projet m'a permis de me familiariser avec l'architecture MVC ainsi que me confronter à la difficulté
+                de partir d'un code préexistant et l'importance de suivre le modèle de ce dernier. Je suis satistait de son rendu final, ayant pû implémenter toutes les fonctionnalités souhaitées. Enfin, il a renforcé mes compétences en PHP.
               </p>
               </div>
         </div>
+
+        <!-- Page de présentation des veilles techonlogique et juridique -->
         <div class="conteneur10" id="veille">
           <div class="conteneur8">
             <h2 class="apropos"> VEILLES </h2>
@@ -301,7 +329,7 @@
             <div class="conteneur19">
               <div class="techno">
                 <p>Technologique</p>
-                <a href="VeilleAgri/trans-fixed-nav.html">
+                <a href="VeilleAgri/veille.html">
                   <img class="agri" src="VeilleAgri/agri.jpg">
                 </a>
               </div>
@@ -320,6 +348,7 @@
 
         </div>
 
+         <!-- Page de contact -->
         <div class="row" id="contact">
 
           <!--Grid column-->
@@ -412,11 +441,13 @@
     </body>
 </html>
 
+<!-- Fonction qui "écrit" le texte -->
 <script>
   var i = 0;
   var txt = 'ETUDIANT EN INFORMATIQUE';
   var speed = 60;
   
+  /* Fonction qui parcours la taille du texe et qui rajoute une lettre à chaque fois tant que la taille du texte n'est pas atteinte */
   function typeWriter() {
     if (i < txt.length) {
       document.getElementById("etude").innerHTML += txt.charAt(i);
@@ -432,6 +463,7 @@
     var navbar = document.getElementById("mainNav");
     var sticky = navbar.offsetTop;
     
+    /* Fonction qui affiche la navbar en sticky dès que l'utilisateur descend dans la page */
     function myFunction() {
       if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky");
