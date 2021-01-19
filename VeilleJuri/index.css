@@ -1,0 +1,74 @@
+/* navbar */
+.navbar {
+    position: relative !important;
+}
+
+/* couleur de la navbar */
+#mainNav {
+    background-color: #00639c !important;
+}
+
+/* couleur des éléments de la navbar */
+.nav-item a{
+    font-size: 16px;
+    color: rgb(240, 240, 240) !important;
+}
+
+.container1 {
+    height: 260vh;
+    background-color:rgb(240, 240, 240);
+}
+
+h1 {
+    position: relative;
+    top: 10vh;
+    height: 20vh;
+    text-align: center;
+}
+
+h4 {
+    margin: auto;
+    width: 85%;
+    position: relative;
+}
+
+p {
+    margin: auto;
+    width: 85%;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+h5 {
+    margin: auto;
+    width: 85%;
+}
+
+.container2 {
+    border-left: 2px solid #0175b8;
+    position: relative;
+    left: 10%;
+    width: 85%;
+}
+
+.container2 p {
+        padding-bottom: 0px !important;
+}
+
+/* unvisited link */
+.container2 a:link {
+    color: black !important;
+    text-decoration: none !important;
+  }
+  
+  /* visited link */
+  .container2 a:visited {
+    color: black !important;
+    text-decoration: none !important;
+  }
+  
+  /* mouse over link */
+  .container2 a:hover {
+    color: black !important;
+    text-decoration: none !important;
+  }
