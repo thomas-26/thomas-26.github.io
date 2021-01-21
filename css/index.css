@@ -1188,3 +1188,82 @@ input {
     width: 100%;
     background-color: #212529;
 }*/
+
+
+.conteneur26 {
+    position: relative;
+    top: 15vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gauche {
+    height: 40vh;
+    width: 25vh;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: white;
+    padding: 0 10 0 10;
+}
+
+.droite {
+    height: 40vh;
+    width: 25vh;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: white;
+    padding: 0 10 0 10;
+}
+
+.haut {
+    height: 30%;
+    background-image: url(../images/site/sio.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bas {
+    height: 70%;
+    text-align: center;
+    color: black;
+    margin-top: 25px;
+}
+
+
+.haut2 {
+    height: 30%;
+    background-image: url(../images/site/sti2d.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bas2 {
+    height: 70%;
+    text-align: center;
+    color: black;
+    margin-top: 25px;
+}
+
+.conteneur29 {
+    width: 42.5vh;
+    margin: 0 auto;
+    position: relative;
+    top: 25vh;
+}
+
+.conteneur27 {
+    width: 42.5vh;
+    border: 2px solid #212529;
+    padding: 15 15 15 0;
+    border-radius: 20px;
+}
+
+.conteneur28 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#stage {
+    height: 100vh;
+}
