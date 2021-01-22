@@ -1,0 +1,1283 @@
+html, body { 
+    overflow-x: hidden; 
+}
+
+/* Affichage pour les écrans de smartphone */
+@media screen and (max-width: 500px) {
+    /* page d'accueil */
+    .conteneur2 {
+        margin: auto;
+        height: 35vh;
+        width: 80%;
+        position: relative;
+        top: 35vh;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    /* nom et prénom */
+    .nom {
+        color: white;
+        font-size: 26px;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+    
+    /* etudes */
+    #etude {
+        margin-bottom: 20px;
+        /* Créer le gradient */
+        background-image: linear-gradient(45deg, #00afa6, #0042ad);
+        /* Met la taille du background and répètre les même propriétés */
+        background-size: 100%;
+        background-repeat: repeat;
+        /* Utilise le texte comme un masque pour le background ce qui va montrer le gradient comme un texte en couleur */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    /* phrase de présentation du site */
+    .accroche {
+        color: white;
+        font-size: 14px;
+    }
+    
+    /* Boutons de la page d'accueil */
+    .conteneur2 .btn {
+        font-size: 14px;
+        margin-left: 10px;
+        margin-top: 20px;
+        border-radius: 0 !important;
+        color: white !important;
+        background-color: #00639c !important;
+        animation: fadein 10s;
+        -moz-animation: fadein 7s; /* Firefox */
+        -webkit-animation: fadein 7s; /* Safari et Chrome */
+        -o-animation: fadein 7s; /* Opera */
+    }
+
+    /* souris */
+    .mouse {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        width: 30px;
+        height: 60px;
+        border: 2px solid white;
+        background: linear-gradient(#00afa6, #0042ad);
+        border-radius: 60px;
+    }
+    
+    /* animation de la souris */
+    .mouse::before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 5px;
+        background: white;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        opacity: 1;
+        animation: mouse 2s infinite;
+    }
+
+    /* changement de l'opacité de la souris */
+    @keyframes mouse {
+        from{
+            opacity: 1;
+            top: 10px;
+        }
+        to {
+            opacity: 0;
+            top: 40px;
+        }
+    }
+
+    /* veille technologique */
+    .techno {
+        border: 1px solid black;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 10%;
+        float: left;
+        padding: 10px;
+    }
+    
+    /* veille juridique */
+    .juridique {
+        border: 1px solid black;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 10%;
+        float: right;
+        padding: 10px;
+    }
+
+    /* Tire de chaque page */
+    .apropos {
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        width: 50vh;
+        margin: auto;
+    }
+
+    /* texte de la page */
+    .texte {
+        margin-bottom: 35px;
+        font-size: 16px;
+    }
+
+    /* page de présentation */
+    .conteneur4 {
+        position: relative;
+        top: 20vh;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* texte */
+    .presentation {
+        font-family: Arial, serif;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    /* div dans la page de présentation */
+    .conteneur5 {
+           width: 75%;
+           font-family: 'Roboto', sans-serif;
+           margin: auto;
+       }
+
+    /* bouton cv */
+    .bloque .btn {
+        border-radius: 0 !important;
+        color: white !important;
+        background-color: #00639c !important;
+        font-size: 12px;
+    }
+
+    /* page de présentation des projets */
+    .conteneur8 {
+        margin: auto;
+        padding-top: 12.5vh;
+        color: white;
+        font-family: 'Arial', sans-serif;
+    }
+
+    /* paragraphes de la page de présentation des projets */
+    .conteneur8 p {
+        width: 75%;
+        margin: auto;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    /* titres de la page de présentation des projets*/
+    .conteneur9 .conteneur8 h5 {
+        width: 75%;
+        margin: auto;
+        font-size: 22px;
+        margin-top: 65px;
+        margin-bottom: 25px;
+    }
+
+    /* caroussel et tables */
+    .conteneur11 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* caroussel */
+    .carousel {
+        border: 3px solid #00639c;
+        height: 20vh;
+        width: 25vh;
+    }
+    
+    /* images du caroussel */
+    .carousel-item img{
+        height: 20vh;
+        width: 100%;
+    }
+
+    /* Conteneur de la page de présentatiosn de tous les projets */
+    .conteneur9 {
+        height: 800vh;
+        background-color: rgb(36, 36, 36);
+        color: rgb(240, 240, 240);
+    }
+
+    /* page des veilles */
+    .conteneur10 {
+        height: 150vh;
+        background-color: rgb(240, 240, 240);
+    }
+
+    /* descriptif de la notion de veille */
+    .conteneur20 {
+        position: relative;
+        top: 5%;
+        width: 100%;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 25%;
+        padding: 10px;   
+    }
+
+    /* page de contact */
+    .conteneur17 {
+        height: 120vh;
+        background-color: rgb(36, 36, 36);
+    }
+
+     /* page de contact */
+    .conteneur18 {
+        margin: auto;
+        padding-top: 12.5vh;
+        width: 40vh;
+        color: white;
+        font-family: 'Arial', sans-serif;
+    }
+
+    /* descriptif des projets */
+    .conteneur21 {
+        position: relative;
+        top: 5vh;
+        width: 75%;
+        margin: auto;
+    }
+
+    /* caroussel et tables */
+    .conteneur22 {
+        position: relative;
+        top: 10vh;
+        margin: auto;
+        width: 75%;
+    }
+
+    /* descriptif des projets */
+    .conteneur23 {
+        width: 75%;
+        position: relative;
+        top: 15vh;
+        margin: auto;
+    }
+
+    /* caroussel et tables */
+    .conteneur24 {
+        position: relative;
+        top: 10vh;
+        width: 75%;
+        margin: auto;
+    }
+
+    /* descriptif des projets */
+    .conteneur25 {
+        position: relative;
+        top: 15vh;
+        width: 75%;
+        margin: auto;
+    }
+
+    .conteneur27 img{
+        width: 90%;
+    }
+}
+
+/* Affichage pour les écrans des tablettes */
+@media screen and (min-width: 501px) and (max-width: 1099px) {
+    /* page d'accueil */
+    .conteneur2 {
+        margin: auto;
+        height: 35vh;
+        width: 80%;
+        position: relative;
+        top: 40vh;
+        text-align: center;
+        /*border: 2px solid white;*/
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    /* nom et prénom */
+    .nom {
+        color: white;
+        font-size: 70px;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
+    /* etudes */
+    #etude {
+        margin-bottom: 40px;
+        /* Create the gradient. */
+        background-image: linear-gradient(45deg, #00afa6, #0042ad);
+        /* Set the background size and repeat properties. */
+        background-size: 100%;
+        background-repeat: repeat;
+        /* Use the text as a mask for the background. */
+        /* This will show the gradient as a text color rather than element bg. */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        font-size: 42.5px;
+        font-weight: bold;
+    }
+    
+    /* phrase de présentation du site */
+    .accroche {
+        color: white;
+        font-size: 30px;
+    }
+    
+    /* Boutons de la page d'accueil */
+    .conteneur2 .btn {
+        font-size: 25px;
+        margin-left: 10px;
+        margin-top: 20px;
+        border-radius: 0 !important;
+        color: white !important;
+        background-color: #00639c !important;
+        animation: fadein 10s;
+        -moz-animation: fadein 7s; /* Firefox */
+        -webkit-animation: fadein 7s; /* Safari et Chrome */
+        -o-animation: fadein 7s; /* Opera */
+    }
+
+    /* souris */
+    .mouse {
+        position: absolute;
+        top: 87.5%;
+        left: 50%;
+        width: 60px;
+        height: 100px;
+        border: 2px solid white;
+        background: linear-gradient(#00afa6, #0042ad);
+        border-radius: 60px;
+    }
+    
+    /* animation de la souris */
+    .mouse::before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 5px;
+        background: white;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        opacity: 1;
+        animation: mouse 2s infinite;
+    }
+
+    /* changement de l'opacité de la souris */
+    @keyframes mouse {
+        from{
+            opacity: 1;
+            top: 15px;
+        }
+        to {
+            opacity: 0;
+            top: 75px;
+        }
+    }
+
+    /* veilles technologique et juridique */
+    .conteneur19 {
+        height: 57.5vh;
+        width: 75%;
+        margin: auto;
+    }
+ 
+    /* veille technologique */
+    .techno {
+        border: 1px solid black;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 10%;
+        float: left;
+        padding: 10px;
+    }
+    
+    /* veille juridique */
+    .juridique {
+        border: 1px solid black;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 10%;
+        float: right;
+        padding: 10px;
+    }
+
+    /* Tire de chaque page */
+    .apropos {
+        text-align: center;
+        font-weight: bold;
+        font-size: 42px;
+        width: 50vh;
+        margin: auto;
+    }
+
+    /* texte de la page */
+    .texte {
+        margin-bottom: 35px;
+        font-size: 16px;
+    }
+
+    /* page de présentation */
+    .conteneur4 {
+        position: relative;
+        top: 25vh;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* texte */
+    .presentation {
+        font-family: Arial, serif;
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    /* image pc */
+    .conteneur6 {
+        width: 35%;
+        background-image: url('../images/pc.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* div dans la page de présentation */
+    .conteneur5 {
+           width: 35%;
+           font-family: 'Roboto', sans-serif;
+       }
+    
+    /* bouton cv */
+    .bloque .btn {
+        border-radius: 0 !important;
+        color: white !important;
+        background-color: #00639c !important;
+        font-size: 24px;
+    }
+
+    /* page de présentation des projets */
+    .conteneur8 {
+        margin: auto;
+        padding-top: 12.5vh;
+        color: white;
+        font-family: 'Arial', sans-serif;
+    }
+
+    /* paragraphes de la page de présentation des projets */
+    .conteneur8 p {
+        width: 75%;
+        margin: auto;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    /* titres de la page de présentation des projets*/
+    .conteneur9 .conteneur8 h5 {
+        width: 75%;
+        margin: auto;
+        font-size: 35px;
+        margin-top: 65px;
+        margin-bottom: 25px;
+    }
+
+    /* caroussel et tables */
+    .conteneur11 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* caroussel */
+    .carousel {
+        border: 3px solid #00639c;
+        height: 20vh;
+        width: 25vh;
+    }
+    
+    /* images du caroussel */
+    .carousel-item img{
+        height: 20vh;
+        width: 100%;
+    }
+
+    /* Conteneur de la page de présentatiosn de tous les projets */
+    .conteneur9 {
+        height: 375vh;
+        background-color: rgb(36, 36, 36);
+        color: rgb(240, 240, 240);
+    }
+
+    /* page des veilles */
+    .conteneur10 {
+        height: 150vh;
+        background-color: rgb(240, 240, 240);
+    }
+
+    /* descriptif de la notion de veille */
+    .conteneur20 {
+        width: 100%;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 50%;
+        padding: 10px;   
+    }
+
+    /* page de contact */
+    .conteneur17 {
+        height: 60vh;
+        background-color: rgb(36, 36, 36);
+    }
+
+    /* page de contact */
+    .conteneur17bis {
+        height: 100vh;
+        background-color: rgb(36, 36, 36);
+    }
+
+    /* page de contact */
+    .conteneur18 {
+        width: 75%;
+        margin: auto;
+        padding-top: 12.5vh;
+        color: white;
+        font-family: 'Arial', sans-serif;
+    }
+
+    /* descriptif des projets */
+    .conteneur21 {
+        position: relative;
+        top: 5vh;
+        width: 75%;
+        margin: auto;
+    }
+
+    /* caroussel et tables */
+    .conteneur22 {
+        position: relative;
+        top: 10vh;
+        margin: auto;
+        width: 75%;
+    }
+
+    /* descriptif des projets */
+    .conteneur23 {
+        width: 75%;
+        position: relative;
+        top: 15vh;
+        margin: auto;
+    }
+
+    /* caroussel et tables */
+    .conteneur24 {
+        position: relative;
+        top: 30vh;
+        width: 75%;
+        margin: auto;
+    }
+
+    /* descriptif des projets */
+    .conteneur25 {
+        position: relative;
+        top: 40vh;
+        width: 75%;
+        margin: auto;
+    }
+
+}
+
+/* Affichage pour les écrans d'ordinateur */
+@media screen and (min-width: 1100px) {
+
+    /* page d'accueil */
+    .conteneur2 {
+        margin: auto;
+        height: 35vh;
+        width: 51%;
+        position: relative;
+        top: 35vh;
+        text-align: center;
+        /*border: 2px solid white;*/
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    /* nom et prénom */
+    .nom {
+        color: white;
+        font-size: 40px;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
+    /* etudes */
+    #etude {
+        margin-bottom: 40px;
+        /* Create the gradient. */
+        background-image: linear-gradient(45deg, #00afa6, #0042ad);
+        /* Set the background size and repeat properties. */
+        background-size: 100%;
+        background-repeat: repeat;
+        /* Use the text as a mask for the background. */
+        /* This will show the gradient as a text color rather than element bg. */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    /* phrase de présentation du site */
+    .accroche {
+        color: white;
+        font-size: 22px;
+    }
+    
+    /* Boutons de la page d'accueil */
+    .conteneur2 .btn {
+        margin-left: 10px;
+        margin-top: 20px;
+        border-radius: 0 !important;
+        color: white !important;
+        background-color: #00639c !important;
+        animation: fadein 10s;
+        -moz-animation: fadein 7s; /* Firefox */
+        -webkit-animation: fadein 7s; /* Safari et Chrome */
+        -o-animation: fadein 7s; /* Opera */
+    }
+
+    /* souris */
+    .mouse {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        width: 37.5px;
+        height: 60px;
+        border: 2px solid white;
+        background: linear-gradient(#00afa6, #0042ad);
+        border-radius: 60px;
+    }
+    
+    /* animation de la souris */
+    .mouse::before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 5px;
+        background: white;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        opacity: 1;
+        animation: mouse 2s infinite;
+    }
+
+    /* changement de l'opacité de la souris */
+    @keyframes mouse {
+        from{
+            opacity: 1;
+            top: 15px;
+        }
+        to {
+            opacity: 0;
+            top: 40px;
+        }
+    }
+
+    /* Tire de chaque page */
+    .apropos {
+        text-align: center;
+        font-weight: bold;
+        font-size: 42px;
+        width: 50vh;
+        margin: auto;
+    }
+
+    /* texte de la page */
+    .texte {
+        margin-bottom: 35px;
+        font-size: 16px;
+    }
+
+    /* veilles technologique et juridique */
+    .conteneur19 {
+        height: 45vh;
+    }
+
+    /* veille technologique */
+    .techno {
+        border: 1px solid black;
+        width: 45%;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 10%;
+        float: left;
+        padding: 10px;
+    }
+
+    /* veille juridique */
+    .juridique {
+        border: 1px solid black;
+        width: 45%;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 10%;
+        float: right;
+        padding: 10px;
+    }
+
+    /* page de présentation */
+    .conteneur4 {
+        position: relative;
+        top: 25vh;
+        width: 100vh;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* texte */
+    .presentation {
+        font-family: Arial, serif;
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    /* image pc */
+    .conteneur6 {
+        width: 40%;
+        background-image: url('../images/pc.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* div dans la page de présentation */
+    .conteneur5 {
+           width: 55%;
+           font-family: 'Roboto', sans-serif;
+       }
+
+    /* bouton cv */
+    .bloque .btn {
+        border-radius: 0 !important;
+        color: white !important;
+        background-color: #00639c !important;
+    }
+
+    /* page de présentation des projets */
+    .conteneur8 {
+        margin: auto;
+        padding-top: 12.5vh;
+        width: 100vh;
+        color: white;
+        font-family: 'Arial', sans-serif;
+    }
+
+    /* titres de la page de présentation des projets*/
+    .conteneur9 .conteneur8 h5 {
+        font-size: 24px;
+        margin-top: 65px;
+        margin-bottom: 25px;
+    }
+
+    /* caroussel et tables */
+    .conteneur11 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* caroussel */
+    .carousel {
+        border: 3px solid #00639c;
+        height: 47.5vh;
+        width: 70vh;
+    }
+    
+    /* images du caroussel */
+    .carousel-item img{
+        height: 47.5vh;
+        width: 100%;
+    }
+
+    /* tableaux */
+    table {
+        width: 20vh !important;
+    }
+
+    /* Conteneur de la page de présentatiosn de tous les projets */
+    .conteneur9 {
+        height: 500vh;
+        background-color: rgb(36, 36, 36);
+        color: rgb(240, 240, 240);
+    }
+
+    /* page des veilles */
+    .conteneur10 {
+        height: 100vh;
+        background-color: rgb(240, 240, 240);
+    }
+
+    /* descriptif de la notion de veille */
+    .conteneur20 {
+        width: 100%;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 5%;
+        padding: 10px;   
+    }
+
+    /* page de contact */
+    .conteneur17 {
+        height: 100vh;
+        background-color: rgb(36, 36, 36);
+    }
+
+    /* page de contact */
+    .conteneur18 {
+        margin: auto;
+        padding-top: 12.5vh;
+        width: 100vh;
+        color: white;
+        font-family: 'Arial', sans-serif;
+    }
+
+    /* descriptif des projets */
+    .conteneur21 {
+        position: relative;
+        top: 10vh;
+        width: 100vh;
+        margin: auto;
+    }
+
+    /* caroussel et tables */
+    .conteneur22 {
+        position: relative;
+        top: 15vh;
+        width: 100vh;
+        margin: auto;
+    }
+    
+    /* descriptif des projets */
+    .conteneur23 {
+        position: relative;
+        top: 25vh;
+        width: 100vh;
+        margin: auto;
+    }
+
+    /* caroussel et tables */
+    .conteneur24 {
+        position: relative;
+        top: 30vh;
+        width: 100vh;
+        margin: auto;
+    }
+
+    /* descriptif des projets */
+    .conteneur25 {
+        position: relative;
+        top: 40vh;
+        width: 100vh;
+        margin: auto;
+    }
+    
+}
+
+/* balise html */
+html {
+    scroll-behavior: smooth;
+}
+
+/* balise body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Changement d'opacité */
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Iamge de fond de la page d'accueil */
+.conteneur {
+    height: 100vh;
+    background-image: url('../images/perroquet.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* navbar */
+.navbar {
+    position: relative !important;
+}
+
+/* couleur de la navbar */
+#mainNav {
+    background-color: #00639c !important;
+}
+
+/* couleur des éléments de la navbar */
+.nav-item a{
+    font-size: 16px;
+    color: rgb(240, 240, 240) !important;
+}
+
+/* Tire de chaque page */
+.conteneur3 {
+    height: 100vh;
+    background-color: rgb(240, 240, 240);
+}
+
+/* Tire de chaque page */
+.titre {
+    width: 50vh;
+    position: relative;
+    top: 12.5vh;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* paragraphe descriptif de la notion de veille */
+.conteneur20 p {
+    padding: 35px;
+    font-weight: 500;
+}
+
+/* image illustrant les veilles */
+.agri {
+    width: 100%;
+}
+
+/* footer */
+footer {
+    padding: 25px;
+    text-align: center;
+    color: white;
+    background-color: rgb(36, 36, 36);
+}
+
+/* bouton cv */
+.curriculum a { 
+    text-decoration:none; 
+    color: white;
+} 
+
+/* bouton cv au survol de la souris */
+.curriculum a:hover { 
+    text-decoration:none; 
+    color: white;
+} 
+
+/* texte de la page de présentation des projets*/
+.conteneur9 .conteneur8 h5 span {
+    border-top: 2px solid rgb(240, 240, 240);
+    padding-top: 5px;
+}
+
+/* titre de la page de présentation des projets*/
+.conteneur8 h2, .conteneur8 h5 {
+    margin-bottom: 20px;
+}
+
+/* titre de la page de présentation des projets*/
+.conteneur7 .conteneur8 h5 {
+   color: #00639c;
+}
+
+/* titre de la page de présentation des projets*/
+.conteneur8 h6 {
+    margin-bottom: 40px;
+}
+/*
+input[type=text], select, textarea {
+    width: 40%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+  
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input {
+    width: 100% !important;
+}
+*/
+
+/* texte de la page contact */
+.text {
+    color: #00639c;
+}
+
+/* bouton de la page contact */
+.col-lg-2 .btn {
+    margin-top: 5px;
+    border-radius: 0 !important;
+    color: white !important;
+    background-color: #00639c !important;
+}
+
+/* navbar */
+.sticky {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+}
+
+/* caroussle image précédente */
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300639c' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+/* caroussle image suivante */
+.carousel-control-next-icon {
+    background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300639c' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+/* caroussle barres */
+.carousel-indicators li {
+    background-color: #00639c !important;
+}
+
+/* titre "veilles" */
+.conteneur10 .conteneur8 h2{
+    color: black;
+}
+
+/* ancre de la page */
+#ancre
+{
+	color:white;
+	text-decoration:none;
+} 
+
+/* titres page contact */
+.conteneur18 h2, .conteneur18 h5 {
+    margin-bottom: 20px;
+}
+
+/* titre page contact */
+.conteneur17 .conteneur18 h5 {
+   color: #00639c;
+}
+
+/* titre page contact */
+.conteneur18 h6 {
+    margin-bottom: 40px;
+}
+
+/* paragraphes page présentation des projets */
+.conteneur21 p {
+    padding: 15px 0 50px 0;
+}
+
+/* ligen page présentation des projets */
+.conteneur21 hr, .conteneur23 hr {
+    border: 1px solid white;
+    width: 90%;
+    margin-left:0;
+}
+
+/* paragraphes page présentation prejet Appli Frais */
+.conteneur22 p {
+    padding: 15px 0 50px 0;
+}
+
+/* titre page présentation prejet Appli Frais */
+.conteneur22 h5 {
+    font-size: 24px;
+    margin-top: 65px;
+    margin-bottom: 25px;
+}
+
+/* paragraphes page présentation prejet Appli Frais */
+.conteneur24 p {
+    padding: 15px 0 50px 0;
+}
+
+/* titre page présentation prejet Appli Frais */
+.conteneur24 h5 {
+    font-size: 24px;
+    margin-top: 65px;
+    margin-bottom: 25px;
+}
+
+/* paragraphes page présentation prejet Appli Frais */
+.conteneur25 p {
+    padding: 15px 0 50px 0;
+}
+
+/* titre page présentation prejet Appli Frais */
+.conteneur25 h5 {
+    font-size: 24px;
+    margin-top: 65px;
+    margin-bottom: 25px;
+}
+
+/* paragraphes page présentation prejet Appli Frais */
+.conteneur23 p {
+    padding: 15px 0 50px 0;
+}
+
+/*
+#contact {
+    width: 100%;
+    background-color: #212529;
+}*/
+
+
+.conteneur26 {
+    position: relative;
+    top: 15vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gauche {
+    height: 40vh;
+    width: 25vh;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: white;
+    padding: 0 10 0 10;
+}
+
+.droite {
+    height: 40vh;
+    width: 25vh;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: white;
+    padding: 0 10 0 10;
+}
+
+.haut {
+    height: 30%;
+    background-image: url(../images/site/sio.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bas {
+    height: 70%;
+    text-align: center;
+    color: black;
+    margin-top: 25px;
+}
+
+
+.haut2 {
+    height: 30%;
+    background-image: url(../images/site/sti2d.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bas2 {
+    height: 70%;
+    text-align: center;
+    color: black;
+    margin-top: 25px;
+}
+
+.conteneur29 {
+    width: 42.5vh;
+    margin: 0 auto;
+    position: relative;
+    top: 25vh;
+}
+
+.conteneur27 {
+    width: 42.5vh;
+    border: 2px solid #212529;
+    padding: 15 15 15 0;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.conteneur28 {
+    margin-top: 20px;
+}
+
+#stage {
+    height: 100vh;
+}
