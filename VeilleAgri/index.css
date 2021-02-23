@@ -2,107 +2,6 @@ html {
     scroll-behavior: smooth;
   }
   
-  .trotro {
-      height: 100%;
-      width: 100%;
-  }
-  
-  .trotro::before {
-    content: "";
-    top: 300%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-image: url(daniel.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: opacity(83%) brightness(20%);
-  }
-  
-  .un {
-      position: relative;
-      height: 40%;
-      width: 45%;
-      top: 15%;
-      left: 5%;
-      float: left;
-      /*border: 2px solid blue;*/
-  }
-  
-  .props {
-      color: rgb(18, 146, 1);
-      font-size: 28px;
-  }
-  
-  .slogan {
-      padding-top: 3%;
-      color: white;
-      font-size: 32px;
-      font-weight: bold;
-      font-family: 'Arial';
-      letter-spacing: 1px;
-  }
-  
-  .blabla {
-      color: white;
-      padding-top: 8%;
-      font-size: 18px;
-      line-height: 2em;
-      font-family: 'Times New Roman';
-  }
-  
-  .infos {
-    background-color: rgb(18, 146, 1);  
-    border: 2px solid rgb(18, 146, 1);
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 5%;
-  }
-  
-  .green {
-      height: 60%;
-      width: 35%;
-      position: relative;
-      float: right;
-      top: 15%;
-      right: 7%;
-      border: 30px solid white;
-      
-  }
-  
-  .gotopbtn:hover {
-      background: rgb(18, 141, 0);
-      color: white;
-  }
-  
-  @media (min-width: 1051px) {
-  
-      .gotopbtn {
-             position: fixed;
-             width: 30px;
-             height: 30px;
-           background: rgba(18, 146, 1, 0.5); 
-            bottom: 20px;
-           right: 25px;
-            text-decoration: none;
-           text-align: center;
-          line-height: 30px;
-           color: white;
-           font-size: 22px;
-          border-radius: 50%;
-          padding: 3px;
-          z-index: 50;
-      }
-  
-  }
-  
   @media (max-width: 1050px) {
   
       .gotopbtn {
@@ -180,46 +79,6 @@ html {
       margin: 25px 0 25px 0;
   }
   
-  .tete {
-      height: 100%;
-      width: 100%;
-  }
-
-  .tete::before {
-    content: "";
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-image: url(desert.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: opacity(90%) brightness(40%);
-  }
-
-  .tata{
-    width: 100%;
-    height: 100%;
-  }
-  
-  .tata::before {
-    content: "";
-    top: 200%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-image: url(desert.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: opacity(90%) brightness(40%);
-  }
-  
   .button {
     background-color: rgb(18, 146, 1);  
     border: 2px solid rgb(18, 146, 1);
@@ -232,166 +91,291 @@ html {
     border-radius: 50px; 
   }
   
-         *{
-             padding: 0px;
-             margin:0px;
-             box-sizing: border-box;
-         }
-  /*
-         .jumbotron{
-              background-image:url(test.jpg);
-              background-size: cover;
-         }
-  */
-         .header{
-              width: 100%;
-              height: 100%;
-              margin-top: -1%;
-              /*background-image:url(test.jpg);
-              background-size: cover;*/
-          /*background-color: beige;*/
-         }
-  
-         .navbar{
-          height: 10px;
-             width: 100%;
-             position: fixed;
-             top: 0px;
-             text-align: right;
-          transition: .5s;
-          z-index: 1;
-          border-top: 4px solid rgb(0, 99, 36);
-         }
-  
-         .navbar ul li{
-             list-style-type: none;
-             display:inline-block;
-             padding: 8px 15px;
-             color: white;
-             font-size: 24px;
-             font-family: sans-serif;
-             cursor: pointer;
-             border-radius:10px;
-          transition: .5s;
-          font-family: "Century Gothic";
-          font-size: 20px;
-         }
-  
-         .navbar ul li:hover{
-             color: rgb(0, 129, 47);
-         }
-         .card{
-     /* position: absolute;
-      top: 50%;
-      left: 50%;
-      background: #f1f1f1;
-      transform: translate(-50%, -50%);
-      overflow: hidden;*/
-      box-shadow: 0px 0px 10px #000000b3;
-      background-color: white;
-      margin-top: 15%; 
-  }
-  
-        .card-header{
-      height: 200px;
-      overflow: hidden;
-      position: relative;
-  }
-  
-  img { 
+  *{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+   }
+
+    .header{
       width: 100%;
-      height: 100%;
-  }
+      height: 98%;
+    }
   
-  .cart-header img{
-      height: 100%;
-  }
-  
-  .card-header .name{
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      color: white;
-  }
-
-  .haut {
-      background-color: rgb(126, 126, 126);
-      position: absolute;
-      top: -110px;
-      left: -20px;
-      padding: 10px;
-  }
-
-  .grand {
-    width: 100px;
-  }
-
-  .tres-grand {
-    width: 180px;
-  }
-  
-  .card-header .last{
-      display: block;
-      font-size: 36px;
-  }
-  
-  .cart-header .first{
-      font-size: 48px;
-      display: block;
-  }
-  
-  .contain{
-      padding: 0 20px 20px 20px;
-      overflow: hidden;
-  }
-  
-  .left-section{
-      width: 260px;
-      overflow: hidden;
-      float: left;
-  }
-  
-  .left-section h3{
-      color: rgb(21, 182, 0);
-  }
-  
-  .left-section p{
-      margin: 20px 0;
-  }
-  
-  .left-section .followbtn{
+    .navbar{
+      height: 10px;
       width: 100%;
-      background: rgb(21, 182, 0);
-      border-radius: 12px;
-      color: white;
-      text-align: center;
-      display: block;
-      padding: 8px 0;
-      transition: 0.2s all;
-      -webkit-transition: width 2s;
-      transition: width 2s;
-  }
-  
-  .left-section .followbtn:hover{
-      background-color: rgba(21, 182, 0);
-      width: 50%;
-  }
-  
-  .right-section{
-      overflow: hidden;
-      float: right;
+      position: fixed;
+      top: 0px;
       text-align: right;
-  }
+      transition: .5s;
+      z-index: 1;
+      border-top: 4px solid rgb(0, 99, 36);
+     }
   
-  .item{
-      margin: 6px 0;
-  }
+    .navbar ul li{
+      list-style-type: none;
+      display:inline-block;
+      padding: 8px 15px;
+      color: white;
+      font-size: 24px;
+      font-family: sans-serif;
+      cursor: pointer;
+      border-radius:10px;
+      transition: .5s;
+      font-family: "Century Gothic";
+      font-size: 20px;
+    }
   
-  .num{
-      display: block;
-      font-size: 30px;
-  }
+   .navbar ul li:hover{
+      color: rgb(0, 129, 47);
+    }
+
+    div#background {
+        background: url(desert.jpg);
+        background-size: cover;
+    }
+
+    section.premiere-page {
+        height: 100%;
+    }
+
+    .card{
+         box-shadow: 0px 0px 10px #000000b3;
+         background-color: white;
+         margin-top: 15%; 
+     }
+     
+    .card-header{
+         height: 200px;
+         overflow: hidden;
+         position: relative;
+     }
+     
+    img { 
+         width: 100%;
+         height: 100%;
+     }
+     
+    .cart-header img{
+         height: 100%;
+     }
+     
+    .card-header .name{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: white;
+    }
+
+    
+  .haut {
+    background-color: rgb(126, 126, 126);
+    position: absolute;
+    top: -110px;
+    left: -20px;
+    padding: 10px;
+}
+
+.grand {
+  width: 100px;
+}
+
+.tres-grand {
+  width: 180px;
+}
+
+.card-header .last{
+    display: block;
+    font-size: 36px;
+}
+
+.cart-header .first{
+    font-size: 48px;
+    display: block;
+}
+
+.contain{
+    padding: 0 20px 20px 20px;
+    overflow: hidden;
+}
+
+.left-section{
+    width: 260px;
+    overflow: hidden;
+    float: left;
+}
+
+.left-section h3{
+    color: rgb(21, 182, 0);
+}
+
+.left-section p{
+    margin: 20px 0;
+}
+
+.left-section .followbtn{
+    width: 100%;
+    background: rgb(21, 182, 0);
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 8px 0;
+    transition: 0.2s all;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+}
+
+.left-section .followbtn:hover{
+    background-color: rgba(21, 182, 0);
+    width: 50%;
+}
+
+.right-section{
+    overflow: hidden;
+    float: right;
+    text-align: right;
+}
+
+.item{
+    margin: 6px 0;
+}
+
+.num{
+    display: block;
+    font-size: 30px;
+}
+
+.word{
+    font-size: 16px;
+}
+
+section.deuxieme-page {
+    height: 100%;
+}
+
+section.troisieme-page {
+    height: 75%;
+}
+
+.trotro {
+    height: 100%;
+    width: 100%;
+}
+
+.trotro::before {
+  content: "";
+  top: 375%;
+  left: 0;
+  width: 100%;
+  height: 101%;
+  margin-top: -0.5%;
+  position: absolute;
+  background-image: url(daniel.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: opacity(83%) brightness(20%);
+}
+
+.un {
+    position: relative;
+    height: 40%;
+    width: 45%;
+    top: 15%;
+    left: 5%;
+    float: left;
+    /*border: 2px solid blue;*/
+}
+
+.props {
+    color: rgb(18, 146, 1);
+    font-size: 28px;
+}
+
+.slogan {
+    padding-top: 3%;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Arial';
+    letter-spacing: 1px;
+}
+
+.blabla {
+    color: white;
+    padding-top: 8%;
+    font-size: 18px;
+    line-height: 2em;
+    font-family: 'Times New Roman';
+}
+
+.infos {
+  background-color: rgb(18, 146, 1);  
+  border: 2px solid rgb(18, 146, 1);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+.green {
+    height: 60%;
+    width: 35%;
+    position: relative;
+    float: right;
+    top: 15%;
+    right: 7%;
+    border: 30px solid white;
+    
+}
+
+.gotopbtn:hover {
+    background: rgb(18, 141, 0);
+    color: white;
+}
+
+@media (min-width: 1051px) {
   
-  .word{
-      font-size: 16px;
-  }
+    .gotopbtn {
+           position: fixed;
+           width: 30px;
+           height: 30px;
+         background: rgba(18, 146, 1, 0.5); 
+          bottom: 20px;
+         right: 25px;
+          text-decoration: none;
+         text-align: center;
+        line-height: 30px;
+         color: white;
+         font-size: 22px;
+        border-radius: 50%;
+        padding: 3px;
+        z-index: 50;
+    }
+
+}
+
+@media (max-width: 1050px) {
+
+    .gotopbtn {
+        position: fixed;
+        width: 45px;
+        height: 45px;
+        background: rgba(18, 146, 1, 0.5); 
+        bottom: 20px;
+        right: 25px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+        font-size: 40px;
+        border-radius: 50%;
+    }
+
+}
