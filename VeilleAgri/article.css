@@ -5,24 +5,24 @@ html {
 
 body {
     background-color: rgb(245, 245, 245);
-    padding-left: 50px;
-    padding-right: 50px;
+    width: 85%;
+    margin: 0 auto;
 }
 
 h1 {
-    font-size: 55px;
+    font-size: 30px;
     line-height: 55px;
-    font-family: GraphikCondensed;
+    font-family: Arial;
     font-weight: 700;
 }
 
 p {
     margin-top: 25px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 img {
-    width: 100%;
+    max-width: 50%;
 }
 
 #img2 {

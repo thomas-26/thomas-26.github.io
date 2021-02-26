@@ -262,7 +262,21 @@ section.troisieme-page {
 .trotro {
     height: 100%;
     width: 100%;
-    background-image: url(daniel.jpg);
+}
+
+.trotro::before {
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(daniel.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: opacity(83%) brightness(20%);
 }
 
 .un {
