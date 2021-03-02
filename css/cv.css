@@ -1,0 +1,99 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #4f81bd;
+}
+
+.centre {
+    width: 75%;
+    float: right;
+    background-color: white;
+}
+
+.titre {
+    font-family: Arial, sans-serif;
+    background-color: #b8cce4;
+    padding: 5px;
+}
+
+h1 {
+    font-size: 32px !important;
+    padding-top: 20%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px !important;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+.competences {
+    margin-left: 15px;
+}
+
+.formations {
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.formations p {
+    margin-bottom: 0 !important;
+}
+
+.experiences {
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.experiences p {
+    margin-bottom: 0 !important;
+}
+
+.interets {
+    margin-left: 15px;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.interets p {
+    margin-bottom: 0 !important;
+}
+
+span {
+    font-weight: 600;
+}
+
+.projets {
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.projets p {
+    margin-bottom: 0 !important;
+}
+
+.titres-annexes {
+    margin-top: 25px;
+    padding: 10px;
+    background-color: #b8cce4;
+    font-size: 26px;
+}
+
+.lateral {
+    font-family: Arial, sans-serif;
+    background-color: #4f81bd;
+    color: white;
+    width: 25%;
+    float: left;
+    text-align: center;
+    height: 100%;
+}
+
+hr {
+    width: 80%;
+    border: 1px solid white !important;
+    margin-top: 15% !important;
+}

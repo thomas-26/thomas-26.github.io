@@ -311,6 +311,14 @@ section.troisieme-page {
     font-family: 'Times New Roman';
 }
 
+.blabla2 {
+    color: white;
+    padding-top: 4%;
+    font-size: 18px;
+    line-height: 2em;
+    font-family: 'Times New Roman';
+}
+
 .infos {
   background-color: rgb(18, 146, 1);  
   border: 2px solid rgb(18, 146, 1);
