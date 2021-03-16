@@ -306,6 +306,22 @@ html, body {
         top: 25vh;
     }
 
+    /* caroussel et tables */
+    .conteneur30 {
+        position: relative;
+        top: 10vh;
+        width: 75%;
+        margin: auto;
+    }
+
+    /* descriptif des projets */
+    .conteneur31 {
+        position: relative;
+        top: 15vh;
+        width: 75%;
+        margin: auto;
+    }
+
 }
 
 /* Affichage pour les écrans des tablettes */
@@ -538,7 +554,8 @@ html, body {
 
     /* Conteneur de la page de présentatiosn de tous les projets */
     .conteneur9 {
-        height: 400vh;
+        min-height: 100vh;
+        padding-bottom: 50vh;
         background-color: rgb(36, 36, 36);
         color: rgb(240, 240, 240);
     }
@@ -608,7 +625,7 @@ html, body {
     /* caroussel et tables */
     .conteneur24 {
         position: relative;
-        top: 30vh;
+        top: 20vh;
         width: 75%;
         margin: auto;
     }
@@ -616,7 +633,7 @@ html, body {
     /* descriptif des projets */
     .conteneur25 {
         position: relative;
-        top: 40vh;
+        top: 30vh;
         width: 75%;
         margin: auto;
     }
@@ -626,6 +643,22 @@ html, body {
         margin: 0 auto;
         position: relative;
         top: 25vh;
+    }
+
+    /* caroussel et tables */
+    .conteneur30 {
+        position: relative;
+        top: 40vh;
+        width: 75%;
+        margin: auto;
+    }
+
+    /* descriptif des projets */
+    .conteneur31 {
+        position: relative;
+        top: 40vh;
+        width: 75%;
+        margin: auto;
     }
 
 }
@@ -856,7 +889,8 @@ html, body {
 
     /* Conteneur de la page de présentatiosn de tous les projets */
     .conteneur9 {
-        height: 500vh;
+        min-height: 100vh;
+        padding-bottom: 50vh;
         background-color: rgb(36, 36, 36);
         color: rgb(240, 240, 240);
     }
@@ -938,6 +972,22 @@ html, body {
         margin: 0 auto;
         position: relative;
         top: 25vh;
+    }
+
+    /* caroussel et tables */
+    .conteneur30 {
+        position: relative;
+        top: 40vh;
+        width: 100vh;
+        margin: auto;
+    }
+
+    /* descriptif des projets */
+    .conteneur31 {
+        position: relative;
+        top: 45vh;
+        width: 100vh;
+        margin: auto;
     }
 
 }
@@ -1172,7 +1222,7 @@ input {
 }
 
 /* ligen page présentation des projets */
-.conteneur21 hr, .conteneur23 hr {
+.conteneur21 hr, .conteneur23 hr, .conteneur25 hr {
     border: 1px solid white;
     width: 90%;
     margin-left:0;
@@ -1304,6 +1354,17 @@ input {
     height: 100vh;
 }
 
+/* titre page présentation prejet Gestion des conférences */
+.conteneur30 h5 {
+    font-size: 24px;
+    margin-top: 65px;
+    margin-bottom: 25px;
+}
+
+/* paragraphes page présentation prejet Gestion des conférences */
+.conteneur31 p {
+    padding: 15px 0 50px 0;
+}
 
 @media screen and (min-width: 1100px) and (max-width: 1500px) {
     
